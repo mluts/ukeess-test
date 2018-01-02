@@ -1,0 +1,8 @@
+en:
+  activerecord:
+    errors:
+      models:
+        payment:
+          attributes:
+            check_number:
+              cant_repeat_within_same_customer: "can't repeat within one customer"
