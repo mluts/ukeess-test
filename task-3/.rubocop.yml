@@ -1,0 +1,48 @@
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - 'db/**/*'
+
+  TargetRubyVersion: 2.3
+
+Documentation:
+  Enabled: true
+
+Rails:
+  Enabled: true
+
+Metrics/LineLength:
+  Max: 100
+  Exclude:
+    - 'config/initializers/**/*.rb'
+
+Metrics/ModuleLength:
+  Exclude:
+    - 'test/**/*_test.rb'
+
+Metrics/ClassLength:
+  Exclude:
+    - 'test/**/*_test.rb'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/environments/*.rb'
+    - 'test/**/*_test.rb'
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'test/**/*.rb'
+
+Style/GuardClause:
+  Enabled: false
+
+Rails/Delegate:
+  Exclude:
+    - "test/**/*_test.rb"
+
+Rails/SkipsModelValidations:
+  Exclude:
+    - "test/**/*_test.rb"
+    - "db/migrate/*.rb"
